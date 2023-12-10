@@ -1,5 +1,49 @@
 # Django Stock Market Data Web Application
 
+## Project Directory Structure
+
+**Webapps/**
+
+- **Data/**
+  - stock_market_data.csv
+  - stock_market_data.json
+
+- **env/**
+  - Include/
+  - Lib/
+  - Scripts/
+  - pyvenv.cfg
+
+- **Janata/**
+  - asgi.py
+  - settings.py
+  - urls.py
+  - wsgi.py
+  - **static/**
+    - **css/**
+      - styles.css
+    - **js/**
+      - main.js
+  - **Table_Apps/**
+    - **management/**
+      - **commands/**
+        - load_data.py
+    - migrations/
+    - __init__.py
+    - admin.py
+    - apps.py
+    - models.py
+    - tests.py
+    - views.py
+  - **templates/**
+    - graphs.html
+    - table_apps.html
+    - table.html
+  - db.sqlite3
+  - manage.py
+
+
+
 ## Project Overview
 
 This Django learning project involves building a basic web application with data visualization and CRUD functionality. The project is divided into three main steps:
@@ -33,7 +77,7 @@ To run this project locally, follow these steps:
 
 1. **Navigate to the project directory:**
     ```bash
-    cd Webapps/Janata
+    cd Janata
     ```
 
 2. **Apply migrations to set up the database:**
